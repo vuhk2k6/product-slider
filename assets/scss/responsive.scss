@@ -1,0 +1,62 @@
+@media (max-width: 740px) {
+  .slider {
+    background-color: #caefd7;
+    flex-direction: column;
+    width: 33rem;
+    height: 60rem;
+    &__product {
+      width: 100%;
+      height: 100%;
+      margin-top: -4rem;
+      &-img--blue,
+      &-img--white,
+      &-img--black,
+      &-img--red {
+        margin-left: -2rem;
+        &.active {
+          transform: translateY(0) scale(-1, 1) rotate(18deg);
+        }
+      }
+
+      &-box {
+        width: 100%;
+        height: 20rem;
+      }
+    }
+    &__desc {
+      width: 100%;
+      height: 40rem;
+      padding: 2rem;
+      background-color: #caefd7;
+      border-radius: 2rem;
+      &-box {
+        padding: 2rem;
+      }
+    }
+    &__size {
+      & span {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+    &__color {
+      & span {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 1.2rem;
+      }
+    }
+    &__action {
+      margin-top: 1rem;
+    }
+    &__heading {
+      margin-bottom: 0.4rem;
+    }
+    &__action {
+      & button {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
